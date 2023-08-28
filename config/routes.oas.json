@@ -4,5 +4,27 @@
     "version": "1.0.0",
     "title": "My Zuplo API"
   },
-  "paths": {}
+  "paths": {
+    "/blog/generate": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "post": {
+        "summary": "New Route",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "anything-goes",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/generate-blog)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "16a54c16-f4ed-4f1b-a443-62559b0916c6"
+      }
+    }
+  }
 }
