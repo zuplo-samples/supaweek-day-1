@@ -8,6 +8,11 @@
     "test": "zup test"
   },
   "dependencies": {
-    "zuplo": "latest"
+    "zuplo": "^1.20230828.2353"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.33.1",
+    "ai": "^2.2.10",
+    "openai": "^4.3.1"
   }
 }
