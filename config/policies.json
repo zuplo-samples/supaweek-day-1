@@ -1,3 +1,26 @@
 {
-  "policies": []
+  "policies": [
+    {
+      "handler": {
+        "export": "SetHeadersInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "headers": [
+            {
+              "name": "apikey",
+              "value": "$env(SUPABASE_SERVICE_ROLE_KEY)",
+              "overwrite": true
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer $env(SUPABASE_SERVICE_ROLE_KEY)",
+              "overwrite": true
+            }
+          ]
+        }
+      },
+      "name": "set-headers-inbound",
+      "policyType": "set-headers-inbound"
+    }
+  ]
 }
