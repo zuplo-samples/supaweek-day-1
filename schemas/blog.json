@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "description": "The content of the blog post"
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the blog post"
+    }
+  },
+  "required": [
+    "content",
+    "title"
+  ]
+}

@@ -6,6 +6,7 @@
     "outDir": "./dist",
     "module": "commonjs",
     "target": "ESNext",
+    "resolveJsonModule": true,
     "preserveConstEnums": true,
     "moduleResolution": "node",
     "useUnknownInCatchVariables": false,
