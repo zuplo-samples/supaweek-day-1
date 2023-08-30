@@ -5,9 +5,29 @@
     "title": "My Zuplo API"
   },
   "paths": {
-    "/blog/generate": {
+    "/v1/blogs": {
       "x-zuplo-path": {
         "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "New Route",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlRewriteHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "rewritePattern": "https://etlzmbtvzuxwhewrqxvk.supabase.co/rest/v1/blogs"
+            }
+          },
+          "policies": {
+            "inbound": [
+              "set-headers-inbound"
+            ]
+          }
+        },
+        "operationId": "7d291eef-b7a8-4654-ad09-105ea86e5500"
       },
       "post": {
         "summary": "New Route",
