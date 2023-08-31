@@ -10,6 +10,12 @@
       "description": "The title of the blog post"
     }
   },
+  "examples": [
+    {
+      "title": "The curvature of the earth",
+      "content": "It's mystery, a puzzle, something that's not flat..."
+    }
+  ],
   "required": [
     "content",
     "title"
