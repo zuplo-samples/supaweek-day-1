@@ -18,7 +18,7 @@
             "export": "urlRewriteHandler",
             "module": "$import(@zuplo/runtime)",
             "options": {
-              "rewritePattern": "https://etlzmbtvzuxwhewrqxvk.supabase.co/rest/v1/blogs"
+              "rewritePattern": "${env.SUPABASE_URL}/rest/v1/blogs"
             }
           },
           "policies": {
