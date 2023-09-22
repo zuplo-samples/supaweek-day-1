@@ -22,7 +22,7 @@ export default async function (request: ZuploRequest, context: ZuploContext) {
     messages: [
       {
         role: "user",
-        content: `Give me a 100 blog about the following topic ${topic}.`,
+        content: `Give me a 100 words blog about the following topic ${topic}.`,
       },
     ],
     functions,
