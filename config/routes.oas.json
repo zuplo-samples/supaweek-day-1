@@ -50,8 +50,10 @@
         "responses": {
           "200": {
             "content": {
-              "application/json; charset=utf-8": {
-                "schema": "$import(./schemas/blog)"
+              "application/json": {
+                "schema": {
+                  "$ref": "../schemas/blog.json"
+                }
               }
             }
           }
