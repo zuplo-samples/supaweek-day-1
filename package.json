@@ -8,7 +8,7 @@
     "test": "zup test"
   },
   "dependencies": {
-    "zuplo": "^1.20230828.2353"
+    "zuplo": "^1.20230927.53"
   },
   "devDependencies": {
     "@supabase/supabase-js": "^2.33.1",
