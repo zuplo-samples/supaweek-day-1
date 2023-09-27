@@ -1,6 +1,15 @@
 {
   "type": "object",
   "properties": {
+    "id": {
+      "type": "integer",
+      "description": "The unique identifier for a blog post"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the blog post was created"
+    },
     "content": {
       "type": "string",
       "description": "The content of the blog post"
@@ -12,8 +21,10 @@
   },
   "examples": [
     {
+      "id": 1,
       "title": "The curvature of the earth",
-      "content": "It's mystery, a puzzle, something that's not flat..."
+      "content": "It's mystery, a puzzle, something that's not flat...",
+      "created_at": "2024-04-01T14:56:29.000Z"
     }
   ],
   "required": [

@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "description": "The content of the blog post"
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the blog post"
+    }
+  },
+  "examples": [
+    {
+      "title": "The curvature of the earth",
+      "content": "It's mystery, a puzzle, something that's not flat..."
+    }
+  ],
+  "required": [
+    "content",
+    "title"
+  ]
+}
